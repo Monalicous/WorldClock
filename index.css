@@ -1,19 +1,73 @@
 body{
-    background: url("https://images.pexels.com/photos/592753/pexels-photo-592753.jpeg?auto=compress&cs=tinysrgb&w=600") no-repeat center center/cover;
     font-family: Arial, Helvetica, sans-serif;
     color: beige;
 }
 
-h1{
+h1 {
     font-size: 50px;
     text-align: center;
 }
 
+h2{
+    margin:0 0 5px;
+    font-size: 24px;
+}
+
+.content{
+        max-width: 600px;
+        background: url("https://images.pexels.com/photos/592753/pexels-photo-592753.jpeg?auto=compress&cs=tinysrgb&w=600") no-repeat center center/cover;
+        margin: 0 auto;
+        padding: 10px;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+}
+
+
+select {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.city{
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed rgba(248, 238, 238, 0.4);
+}
+
+.city:nth-child(2){
+    border:none;
+}
+
+.time{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.time small{
+    font-size: 18px;
+    vertical-align: middle;
+    line-height: 48px;
+}
+
+.date{
+    opacity: 0.7;
+} 
+
+
 footer a{
     text-decoration: none;
-    color: beige;
+    color: darkgoldenrod;
 }
+
 
 footer{
     text-align: center;
+    font-size: 18px;
+    color: darkgoldenrod;
+    padding: 10px 0;
 }
