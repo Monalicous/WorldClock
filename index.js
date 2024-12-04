@@ -6,4 +6,4 @@ setInterval(function () {
 
     muscatDate.innerHTML = currentTime.format("MMMM Do YYYY");
     muscatTime.innerHTML = currentTime.format("h:mm:ss[ <small>]A[</small>]");
-}, 2000);
+}, 1000);
