@@ -36,12 +36,8 @@ select {
     margin: 20px 0;
     justify-content: space-between;
     padding: 10px 0;
-    border-bottom: 1px dashed rgba(248, 238, 238, 0.4);
 }
 
-.city:nth-child(2){
-    border:none;
-}
 
 .time{
     font-size: 48px;

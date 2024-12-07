@@ -3,7 +3,7 @@ function updateTime() {
     if (cityName) {
         let muscatDate = cityName.querySelector(".date");
         let muscatTime = cityName.querySelector(".time");
-        let currentTime = moment().tz("Oman/Muscat");
+        let currentTime = moment().tz("Asia/Muscat");
 
         muscatDate.innerHTML = currentTime.format("MMMM Do YYYY");
         muscatTime.innerHTML = currentTime.format("h:mm:ss[ <small>]A[</small>]");
@@ -23,17 +23,19 @@ function updateTime() {
     if (cityThree) {
         let parisDate = cityThree.querySelector(".date");
         let parisTime = cityThree.querySelector(".time");
-        let currentParisTime = moment().tz("France/Paris");
+        let currentParisTime = moment().tz("Europe/Paris");
 
         parisDate.innerHTML = currentParisTime.format("MMMM Do YYYY");
         parisTime.innerHTML = currentParisTime.format("h:mm:ss[ <small>]A[</small>]");
     }
 
-
 };
 
 function changeCity(event) {
-    let cityTimeZone = event.target.value
+    let cityTimeZone = event.target.value;
+    if (cityTimeZone === "location") {
+        cityTimeZone = moment.tz.guess();
+    }
     let cityName = cityTimeZone.replace("_", " ").split("/")[1];
     let cityTime = moment().tz(cityTimeZone);
     let cities = document.querySelector("#cities");
